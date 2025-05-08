@@ -1,6 +1,5 @@
 from enum import Enum
 
-
 class CaseOption(Enum):
     ORIGINAL = 'original'
     UPPER = 'upper'
@@ -8,7 +7,7 @@ class CaseOption(Enum):
 
 
 def format_sequence(sequence_obj, case=CaseOption.ORIGINAL, max_length=0) -> str:
-    seq = sequence_obj.get_sequence
+    seq = sequence_obj.get_secuencia()
 
     # Aplicar o formato de letras
     if case == CaseOption.UPPER:
@@ -24,8 +23,7 @@ def format_sequence(sequence_obj, case=CaseOption.ORIGINAL, max_length=0) -> str
     else:
         formatted_seq = seq
 
-    return f">{sequence_obj.identifier}\n{formatted_seq}"
-
+    return f">{sequence_obj.get_id()}\n{formatted_seq}"
 
 # Exemplo de uso
 if __name__ == '__main__':

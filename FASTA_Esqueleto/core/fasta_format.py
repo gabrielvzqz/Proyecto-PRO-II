@@ -1,7 +1,7 @@
 import sys
-from core.fasta import load_fasta, write_fasta # función que hicimos para leer
-from core.formatter import CaseOption, format_sequence
-from argsparser import parse_args
+from fasta import load_fasta, write_fasta # función que hicimos para leer
+from formatter import CaseOption, format_sequence
+from FASTA_Esqueleto.core.argsparser import parse_args
 
 
 def main():

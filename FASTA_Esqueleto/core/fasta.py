@@ -1,5 +1,5 @@
-from core.sequences import Sequence
-from core.formatter import CaseOption
+from sequences import Sequence
+from formatter import CaseOption
 
 def load_fasta(filepath: str) -> list:
     sequences = []
