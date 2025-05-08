@@ -10,6 +10,15 @@ def parse_args(args):
             toret[name] = True
     
     return toret
+def validate_args_count_and_names(args_dict, expected_keys):
+    if len(args_dict) < len(expected_keys):
+        print(f"Error: Faltan argumentos. Se esperaban: {', '.join(expected_keys)}.")
+        exit(1)
+
+    for key in expected_keys:
+        if key not in args_dict:
+            print(f"Error: El argumento '--{key}' es obligatorio.")
+            exit(1)
 
 if __name__ == '__main__':
     print(parse_args(['--test=a']))

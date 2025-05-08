@@ -24,7 +24,7 @@ def load_fasta(filepath: str) -> list:
 
 
 def write_fasta(sequences, filepath, case, max_length):
-    from core.formatter import format_sequence  # evitar import circular
+    from formatter import format_sequence  # evitar import circular
 
     with open(filepath, 'w') as f:
         for seq in sequences:
