@@ -1,3 +1,5 @@
+# Junta todo el resto de clases
+
 import sys
 from fasta import load_fasta, write_fasta
 from transformations import RenameDuplicatedSequencesTransformation

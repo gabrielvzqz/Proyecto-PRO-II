@@ -1,3 +1,5 @@
+# Carga y lee un archivo y lo escribe en un nuevo archivo
+
 from sequences import Sequence
 from formatter import CaseOption
 
@@ -33,7 +35,7 @@ def write_fasta(sequences, filepath, case, max_length):
 
 
 if __name__ == '__main__':
-    from core.sequences import Sequence
+    from sequences import Sequence
 
     seqs = [
         Sequence("S1", "ACGTACGTACGT"),
@@ -41,7 +43,7 @@ if __name__ == '__main__':
     ]
     write_fasta(seqs, 'salida.fasta', case=CaseOption.UPPER, max_length=4)
    
-    fasta_file = 'Fasta_Esqueleto/test_data/test_1.fasta'
+    fasta_file = 'Fasta_Esqueleto/core/test_data/test_1.fasta'
     seqs = load_fasta(fasta_file)
     for seq in seqs:
         print(seq)

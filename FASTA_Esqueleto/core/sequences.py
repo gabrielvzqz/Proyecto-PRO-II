@@ -1,3 +1,5 @@
+# Dice como se representa la secuencia
+
 class Sequence:
     def __init__(self, identifier: str, sequence: str):
         self.identifier = identifier

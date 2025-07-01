@@ -1,5 +1,7 @@
-from enum import Enum
+# Da la forma que se pida a la secuencia del archivo que saldrá nuevo
 
+from enum import Enum
+from sequences import Sequence 
 class CaseOption(Enum):
     ORIGINAL = 'original'
     UPPER = 'upper'
@@ -27,7 +29,7 @@ def format_sequence(sequence_obj, case=CaseOption.ORIGINAL, max_length=0) -> str
 
 # Exemplo de uso
 if __name__ == '__main__':
-    from sequences import Sequence  # Asegúrate de que a clase está dispoñible
+ # Asegúrate de que a clase está dispoñible
 
     s = Sequence("S1", "ACTGATCGTTGCA")
     print(format_sequence(s, case=CaseOption.LOWER, max_length=4))

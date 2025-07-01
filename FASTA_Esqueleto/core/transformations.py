@@ -1,3 +1,5 @@
+# Renombra los identificadores (S1, S2...) que estén duplicados
+
 import sys
 from fasta import load_fasta, write_fasta
 from formatter import CaseOption, format_sequence

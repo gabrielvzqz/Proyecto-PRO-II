@@ -1,3 +1,5 @@
+# Lee la terminal
+
 def parse_args(args):
     toret = {}
     for arg in args:
